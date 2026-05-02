@@ -1,0 +1,6 @@
+@MontealegreLibraryNowAPI_HostAddress = http://localhost:5124
+
+GET {{MontealegreLibraryNowAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
