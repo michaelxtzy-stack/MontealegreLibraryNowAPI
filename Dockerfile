@@ -3,7 +3,7 @@ WORKDIR /app
 EXPOSE 8080
 ENV ASPNETCORE_URLS=http://+:8080
 
-FROM mcr.microdsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microdsoft.com/dotnet/sdk:8.0 AS base
 WORKDIR /src
 COPY . .
 RUN dotnet restore "MontealegreLibraryNowAPI/MontealegreLibraryNowAPI.csproj"
