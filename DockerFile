@@ -11,4 +11,4 @@ RUN dotnet publish "MontealegreLibraryNowAPI.csproj"-c Release -o /app/out
 
 FROM base AS final
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet","MontealegreLibraryNowAPI.dll"]s
+ENTRYPOINT ["dotnet","MontealegreLibraryNowAPI.dll"]
